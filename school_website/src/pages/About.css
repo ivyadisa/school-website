@@ -1,0 +1,245 @@
+.about-page {
+  font-family: Arial, sans-serif;
+  color: #02282D;
+  line-height: 1.6;
+}
+
+/* ================================
+   HERO SECTION (two-column layout)
+   ================================ */
+.about-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.about-hero-text {
+  flex: 1;
+}
+
+.about-hero-text h1 {
+  font-size: 3rem;
+  color: #02282D;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.about-hero-text h2 {
+  font-size: 2rem;
+  color: #FF6600;
+  margin-bottom: 10px;
+}
+
+.about-hero-text p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.about-hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-hero-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  object-fit: cover;
+}
+
+/* ================================
+   SECTIONS
+   ================================ */
+.about-section,
+.about-values,
+.about-gallery {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.about-section h2,
+.about-values h2,
+.about-gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.highlight {
+  color: #FF6600;
+  font-weight: bold;
+}
+
+/* ================================
+   MISSION & VISION CARDS
+   ================================ */
+.about-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  flex: 1 1 300px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #FF6600;
+}
+
+/* ================================
+   CORE VALUES
+   ================================ */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.value {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-weight: bold;
+}
+
+/* ================================
+   GALLERY
+   ================================ */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* ================================
+   CALL TO ACTION
+   ================================ */
+.about-cta {
+  background: #02282D;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.about-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.contact-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 30px;
+  background: #FF6600;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.contact-btn:hover {
+  background: #e65c00;
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+   ================================ */
+@media (max-width: 768px) {
+  .about-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-hero-text {
+    order: 1;
+  }
+
+  .about-hero-image {
+    order: 2;
+    margin-top: 20px;
+  }
+
+  .about-hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-hero-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-hero-text p {
+    font-size: 1rem;
+  }
+}
+
+/* ================================
+   ANIMATIONS
+   ================================ */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.slide-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: slideLeft 1s ease-out forwards;
+}
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(30px);
+  animation: slideRight 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

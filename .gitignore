@@ -1,0 +1,19 @@
+# Python
+# Environment variables
+.env
+*.pyc
+__pycache__/
+db.sqlite3
+
+# Node
+node_modules/
+build/
+
+# System
+*.lnk
+*.zip
+desktop.ini
+
+# Others
+*.log
+

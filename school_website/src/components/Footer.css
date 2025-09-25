@@ -1,0 +1,106 @@
+.footer {
+  background: #011f24; /* deeper teal */
+  color: #eee;
+  padding: 60px 20px 20px;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-col h2.footer-logo {
+  color: #FF6600;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.footer-col h3 {
+  color: #FF6600;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.footer-col p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col li {
+  margin-bottom: 10px;
+}
+
+.footer-col a {
+  color: #eee;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-col a:hover {
+  color: #FF6600;
+}
+
+/* Social Icons */
+.footer-socials {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+.footer-socials a {
+  background: #FF6600;
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.footer-socials a:hover {
+  background: #e65c00;
+}
+
+/* Newsletter */
+.footer-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.footer-form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.footer-form button {
+  background: #FF6600;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer-form button:hover {
+  background: #e65c00;
+}
+
+/* Bottom Section */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 30px;
+  font-size: 0.9rem;
+}

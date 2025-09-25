@@ -1,0 +1,346 @@
+.academics-page {
+  font-family: Arial, sans-serif;
+  color: #02282D;
+  line-height: 1.6;
+}
+
+/* ========== HERO ========== */
+.academics-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #334155;
+  margin-bottom: 18px;
+}
+
+.level-switch {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.level-btn {
+  padding: 10px 16px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.15s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.level-btn:hover {
+  transform: translateY(-1px);
+  border-color: #cbd5e1;
+}
+
+.level-btn.active {
+  background: #FF6600;
+  color: #fff;
+  border-color: #FF6600;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 10px 16px rgba(0,0,0,0.12);
+}
+
+/* ========== STATS ========== */
+.academics-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  max-width: 1000px;
+  margin: 10px auto 30px;
+  padding: 0 20px;
+}
+
+.stat {
+  background: #fff;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.stat-label {
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+/* ========== SUBJECTS ========== */
+.subjects-section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.subjects-section h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.subjects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.subject-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 14px 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+  font-weight: 700;
+}
+
+/* ========== DEPARTMENTS ========== */
+.departments-section {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.departments-section h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.departments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.dept-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 18px;
+  text-align: left;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.07);
+}
+
+.dept-card h3 {
+  color: #FF6600;
+  margin-bottom: 6px;
+}
+
+.dept-blurb {
+  color: #334155;
+  margin-bottom: 10px;
+}
+
+.dept-list {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.dept-list li {
+  margin: 4px 0;
+}
+
+/* ========== ASSESSMENT ========== */
+.assessment-section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.assessment-section h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.assessment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.assessment-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 16px;
+  text-align: left;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.07);
+}
+
+.assessment-card h4 {
+  color: #FF6600;
+  margin-bottom: 6px;
+}
+
+/* ========== RESOURCES ========== */
+.resources-section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.resources-section h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.resource-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pill-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 9999px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  color: #02282D;
+  transition: transform 0.15s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.pill-btn:hover {
+  transform: translateY(-1px);
+  border-color: #cbd5e1;
+  background: #f8fafc;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 12px 26px;
+  border-radius: 9999px;
+  background: #FF6600;
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform 0.15s ease, background 0.2s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-1px);
+  background: #e65c00;
+}
+
+/* ========== FAQ ========== */
+.faq-section {
+  max-width: 900px;
+  margin: 40px auto 60px;
+  padding: 0 20px;
+}
+
+.faq-section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.faq-list {
+  display: grid;
+  gap: 10px;
+}
+
+.faq-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 14px 16px;
+  background: transparent;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-toggle {
+  font-size: 1.2rem;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease;
+  padding: 0 16px;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 200px; /* sufficient for a paragraph */
+  padding: 0 16px 14px;
+}
+
+/*========= ANIMATIONS =============*/
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 900px) {
+  .academics-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-text {
+    order: 1;
+  }
+  .hero-image {
+    order: 2;
+  }
+  .academics-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+  .stat-number {
+    font-size: 1.5rem;
+  }
+  .subjects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
